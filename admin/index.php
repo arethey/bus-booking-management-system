@@ -77,7 +77,7 @@ include("auth_session.php");
             </nav>
 
             <div class="container">
-                <p>Hey, <?php echo $_SESSION['username']; ?>!</p>
+                <p> I'M FREEEEEEEE!!!!<?php echo $_SESSION['username']; ?>!</p>
                 <p>You are now user dashboard page.</p>
             </div>
         </div>
