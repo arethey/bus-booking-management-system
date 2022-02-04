@@ -1,0 +1,45 @@
+ADMIN
+-booked
+	-customer id
+	-schedule id
+	-payment status
+	-seat number
+-schedules
+	-route id
+	-estimate time departure
+	-estimate time arrival
+	-fare
+-route
+	-bus id
+	-driver id
+	-conductor id
+	-start point
+	-end point
+	-distance(km)
+	-approximate time
+	-status
+-bus
+	-bus name
+	-bus number
+-drivers
+	-first name
+	-last name
+	-gender
+	-contact number
+	-address
+-conductors
+	-first name
+	-last name
+	-gender
+	-contact number
+	-address
+-customers
+	-first name
+	-last name
+	-gender
+	-age
+	-contact number
+	-address
+-discount
+	-name
+	-percentage
