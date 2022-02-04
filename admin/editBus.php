@@ -19,7 +19,7 @@
             </div>
             <div>
                 <a href="index.php?page=bus" class="btn btn-link">Cancel</a>
-                <button type="submit" class="btn btn-primary" name="update">Update</button>
+                <button type="submit" class="btn btn-primary" name="updateBus">Update</button>
             </div>
         </form>
     </div>
