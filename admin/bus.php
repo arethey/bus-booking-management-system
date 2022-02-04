@@ -17,7 +17,7 @@
 
         <?php $results = mysqli_query($con, "SELECT * FROM bus"); ?>
 
-        <table class="table table-striped">
+        <table class="table table-striped table-sm">
             <thead>
                 <tr>
                     <th scope="col">Bus Name</th>
@@ -31,9 +31,9 @@
                 <td><?php echo $row['bus_name']; ?></td>
                 <td><?php echo $row['bus_number']; ?></td>
                 <td>
-                    <a href="index.php?page=editBus&edit=<?php echo $row['id']; ?>"
-                        class="btn btn-sm btn-warning mr-2">Edit</a>
-                    <a href="index.php?del=<?php echo $row['id']; ?>" class="btn btn-sm btn-danger">Delete</a>
+                    <a href="index.php?page=editBus&editBus=<?php echo $row['id']; ?>"
+                        class="btn btn-sm btn-warning mr-1">Edit</a>
+                    <a href="index.php?delBus=<?php echo $row['id']; ?>" class="btn btn-sm btn-danger">Delete</a>
                 </td>
             </tr>
             <?php } ?>
