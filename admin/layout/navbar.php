@@ -1,6 +1,6 @@
 <nav class="navbar navbar-dark bg-dark">
     <span class="navbar-brand mb-0 h1">
-        <button class="btn toggle btn-light mr-3" onclick="toggleMenu()">
+        <button class="btn btn-sm toggle btn-light mr-3" onclick="toggleMenu()">
             <i class="fa fa-bars" aria-hidden="true"></i>
         </button>
         Bus Online Reservation System
