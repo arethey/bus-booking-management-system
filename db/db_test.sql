@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 03, 2022 at 03:23 PM
+-- Generation Time: Feb 04, 2022 at 04:58 PM
 -- Server version: 10.4.19-MariaDB
 -- PHP Version: 7.4.20
 
@@ -20,6 +20,40 @@ SET time_zone = "+00:00";
 --
 -- Database: `db_test`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `bus`
+--
+
+CREATE TABLE `bus` (
+  `id` int(11) NOT NULL,
+  `bus_name` varchar(150) NOT NULL,
+  `bus_number` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `bus`
+--
+
+INSERT INTO `bus` (`id`, `bus_name`, `bus_number`) VALUES
+(10, 'test1', 'test1');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `drivers`
+--
+
+CREATE TABLE `drivers` (
+  `id` int(11) NOT NULL,
+  `fname` varchar(150) NOT NULL,
+  `lname` varchar(150) NOT NULL,
+  `gender` varchar(10) NOT NULL,
+  `contact` varchar(50) NOT NULL,
+  `address` varchar(250) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -51,6 +85,18 @@ INSERT INTO `users` (`id`, `username`, `password`, `create_datetime`) VALUES
 --
 
 --
+-- Indexes for table `bus`
+--
+ALTER TABLE `bus`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `drivers`
+--
+ALTER TABLE `drivers`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
@@ -59,6 +105,18 @@ ALTER TABLE `users`
 --
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `bus`
+--
+ALTER TABLE `bus`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+
+--
+-- AUTO_INCREMENT for table `drivers`
+--
+ALTER TABLE `drivers`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `users`
